@@ -24,6 +24,6 @@ class LongConverterTest {
     @ParameterizedTest
     @MethodSource("answers")
     void shouldEquals(long number, String response) {
-        Assertions.assertEquals(response, converter.toString(number).trim());
+        Assertions.assertEquals(response, converter.convertToString(number).trim());
     }
 }

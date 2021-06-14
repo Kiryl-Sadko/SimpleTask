@@ -19,7 +19,7 @@ public class LongConverterImpl implements LongConverter {
     public LongConverterImpl() {
     }
 
-    public String toString(Long number) {
+    public String convertToString(Long number) {
         StringBuilder resultString = new StringBuilder();
         List<Number> listOfPeriods = splitByPeriods(number);
         int periodCount = listOfPeriods.size();
